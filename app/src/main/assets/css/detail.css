@@ -1,0 +1,397 @@
+
+      html {
+
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      height: 100%;
+      -webkit-tap-highlight-color: rgba(0,0,0,0)
+      }
+
+      body {
+      height: 100%;
+      margin:0 10px;
+      background:#fff;
+
+      vertical-align: baseline;
+      font-family: "Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif
+      }
+
+
+        *{
+              margin:0px;
+              padding:0px;
+              }
+
+        .tit{
+              text-align:left;
+              font-size:20px;
+              color:#000;
+              font-weight:bold;
+              line-height:1.5;
+              padding-top:10px
+              }
+        .author{
+                text-align:left;
+                font-size:12px;
+                float:left;
+                height:25px;
+                line-height:25px;
+                color:#000000
+                }
+                .circle {
+                        width: 30px;
+                         height: 30px;
+                         border-radius: 15px;
+                         float:left;
+                         margin-bottom=5px;
+                    }
+        .author1{
+                         padding-top:10px;
+                         padding-left:8px;
+                        font-size:12px;
+                        float:left;
+                        text-left:40px;
+                        height:25px;
+                        line-height:25px;
+                        color:#000000
+                        }
+        .time1{
+                        padding-top:10px;
+                        text-align:left;
+                        font-size:12px;
+                        float:right;
+                        height:25px;
+                        line-height:25px;
+                        color:#999999
+                        }
+
+        .time{
+                text-align:left;
+                font-size:12px;
+                float:right;
+                height:25px;
+                line-height:25px;
+                color:#999999
+                }
+        .clear{
+                clear:both;
+                overflow:hidden;
+                }
+        .content1{
+                margin-top:5px;
+                text-align:left;
+                font-size:16px;
+                color:#000;
+                line-height:1.8;
+                background:#ffffff;
+        }
+
+        .content1 p{
+        margin:0 0 1em;}
+        .link{
+                   height:0px;
+                   width:100%;
+                   background:#eeeeee;
+                   }
+        .source{   background:#F2F2F2;
+                   height:34px;
+                   line-height:34px;
+                   color:#999999;
+                   text-align:center;
+                   width:100%;
+                   margin-top:26dp ;
+                   font-size:14px;
+                   margin-bottom:15px
+
+                   }
+           .voteitem-my{
+                   background:#F2F2F2;
+                   height:34px;
+                   line-height:34px;
+                   color:#999999;
+                   width:100%;
+                   margin-top:26dp ;
+
+                    }
+
+                    .checkbefore {
+                    float:right;
+                    width:20px;
+                    height:20px;
+                    background:url(file:///android_asset/check_normal.png)right top no-repeat;
+                    background-size: contain;
+
+                    }
+                    .checkafter{
+                     float:right;
+                     width:20px;
+                     height:20px;
+                      background:url(file:///android_asset/check-icon.png)right top no-repeat;
+                      background-size: contain;
+                    }
+          .source1{   background:#F2F2F2;
+                      height:34px;
+                      line-height:34px;
+                       color:#999999;
+                       text-align:center;
+                       width:100%;
+                       margin-top:26dp ;
+                      font-size:14px;
+                       margin-bottom:15px
+                                      }
+        .about_news{
+                   line-height:1.5;
+                   margin-top:6px
+                   font-size:15sp;
+                   font-weight:bold;
+                   color:#121212;
+
+        }
+        .btn_div{
+        width:84%;
+        margin-left:10%;
+        text-align:center;
+        height:25px;
+        margin-bottom:15px;
+        margin-top:5px}
+        .btn{
+        width:22%;
+        height:25px;
+        line-height:25px;
+        border-radius:5px;
+        border:1px solid #ccc;
+        text-align:center;
+        float:left;
+        margin-left:7%;
+        padding-top:4px
+        }
+        .btn2{margin:0 1.5px;}
+        .btn span{vertical-align:top;padding-left:5px;}
+        .btn img{padding-top:3px;}
+
+/*投票开始*/
+.vote-mod {
+position: relative;
+margin: .6rem .3rem;
+}
+.vote-mod .ad-mod {
+margin-left: 0;
+margin-right: 0;
+}
+
+.vote-wrap {
+list-style-type:none;
+position: relative;
+padding: .4rem .3rem;
+border: 0px solid #F3F5F9;
+/*background-color: #fff;*/
+
+border-radius: 6px;
+height: auto;
+}
+.vote-wrap:before {
+position: absolute;
+content: '';
+right: -2px;
+top: -2px;
+width: .53rem;
+height: .5rem;
+background: #ffffff url(file:///android_asset/angle_bg.png) center center no-repeat;
+background-size: contain;
+}
+.vote-wrap:after {
+display: block;
+width: 100%;
+clear: both;
+content: "";
+}
+.vote-wrap .vote-title {
+margin-bottom: .22rem;
+font-size: 18px;
+line-height: .5rem;
+font-weight: bold;
+}
+.vote-wrap .vote-desc {
+margin-bottom: .32rem;
+color: #666;
+font-size: 16px;
+line-height: .48rem;
+}
+.vote-wrap .vote-item-wrap {
+height: auto;
+/*overflow: hidden;*/
+
+}
+.vote-wrap .vote-item-wrap:after {
+display: block;
+width: 100%;
+clear: both;
+content: "";
+}
+.vote-wrap .vote-item-wrap i,
+.vote-wrap .vote-item-wrap em {
+float: left;
+font-style: normal;
+}
+.vote-wrap .vote-item-wrap li {
+display: flex;
+    margin-top: .6rem;
+    line-height: .48rem;
+    overflow: hidden;
+    font-size: 17px;
+}
+.vote-wrap .vote-item-wrap li i {
+width: .2rem;
+}
+.vote-wrap .vote-item-wrap li .vote-item-name {
+ display: inline-box;
+    flex: 1;
+    margin-top:28px;
+    line-height: 28px;
+    padding-right: .15rem;
+}
+.vote-wrap .vote-item-wrap li em {
+display: inline-box;
+    width: .42rem;
+    height: .42rem;
+    margin-top:.1rem;
+background: url(file:///android_asset/init-icon.png) center center no-repeat;
+background-size: contain;
+}
+.vote-wrap .vote-item-wrap li:last-child .percent-wrap {
+margin-bottom: 0;
+}
+.vote-wrap .vote-item-wrap.active li {
+display: block;
+}
+.vote-wrap .vote-item-wrap li.pic-item {
+display: flex;
+margin-top: .6rem;
+    line-height: .8rem;
+}
+.vote-wrap .vote-item-wrap .pic-item i {
+width: .8rem;
+height: .8rem;
+margin-top: .1rem;
+border-radius: 6px;
+background-color: #fff;
+overflow: hidden;
+}
+.vote-wrap .vote-item-wrap .pic-item i img {
+width: 100%;
+}
+.vote-wrap .vote-item-wrap .pic-item .vote-item-name {
+margin-left: .3rem;
+}
+.vote-wrap .vote-item-wrap .pic-item em {
+}
+.vote-wrap .vote-item-wrap .pic-item .percent-wrap {
+flex: 1;
+padding-left: .2rem;
+}
+.vote-wrap .vote-item-wrap .pic-item .percent-wrap .vote-item-name {
+display: block;
+    width: 100%;
+    margin-left: 0;
+}
+.vote-wrap .vote-item-wrap .pic-item .percent-wrap .percent-inner {
+display: inline-block;
+    margin-left: 0;
+    margin-top:15px;
+    width: 80%;
+
+}
+.vote-wrap .vote-item-wrap .pic-item .percent-wrap .percent-val {
+display: block;
+    margin-top: .16rem;
+    margin-left: 0;
+    height: .33rem;
+    line-height: .37rem
+}
+.vote-wrap .vote-item-wrap .active em {
+background: url(file:///android_asset/check-icon.png) center center no-repeat;
+background-size: contain;
+}
+.vote-wrap .vote-btn {
+display: block;
+margin: .55rem auto 0;
+width: 2.2rem;
+height: .76rem;
+line-height: .8rem;
+text-align: center;
+background: #f12b15;
+border-radius: 38px;
+color: #fff;
+font-size: 15px;
+}
+.vote-wrap .disable-vote-btn {
+background: #d8d8d8;
+}
+.vote-wrap .voted {
+background: #d8d8d8;
+}
+.vote-wrap .vote-people-num {
+display: block;
+margin-top: .16rem;
+width: 100%;
+height: .3rem;
+line-height: .34rem;
+text-align: center;
+font-size: 11px;
+color: #bbb;
+}
+.vote-wrap .v-hide {
+visibility: hidden;
+}
+.vote-wrap .percent-wrap {
+width: 100%;
+/*overflow: hidden;*/
+
+}
+.vote-wrap .percent-wrap .percent-inner {
+margin-bottom:15px;
+position: relative;
+float: left;
+margin-top: .14rem;
+width: 80%;
+height: 15px;
+background-color: #F5F5F5;
+border-radius: 4px;
+overflow: hidden;
+}
+.vote-wrap .percent-wrap .percent-inner .bar {
+position: absolute;
+left: 0;
+top: 0;
+margin-left: 0;
+height: 15px;
+background-color: #4094E1;
+border-radius: 4px;
+overflow: hidden;
+}
+.vote-wrap .percent-wrap .percent-val {
+float: right;
+margin-left: 0;
+color: #666;
+margin-top: 10px;
+font-size: 12px;
+line-height: .33rem;
+}
+.votenamestyle{
+  font-size:14px;
+  margin-left:5px;
+}
+.vote-btn_my{
+position:relative_center;
+background:#F2F2F2;
+height:34px;
+line-height:34px;
+color:#999999;
+text-align:center;
+width:60%;
+font-size:14px;
+margin:0 auto;
+margin-bottom:15px
+}
+
+/*投票结束*/
